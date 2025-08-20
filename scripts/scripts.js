@@ -324,7 +324,13 @@ async function loadLazy(doc) {
     loadCSS(`${window.hlx.codeBasePath}/styles/article.css`),
     loadFonts(),
     import('./acdl/adobe-client-data-layer.min.js'),
+    
   ]);
+
+  if (window.location.href.includes('.aem.page')) {
+   import('../tools/sidekick/aem-sites-optimizer-preflight.js');
+}
+
 
   if (sessionStorage.getItem('acdl:debug')) {
     import('./acdl/validate.js');
