@@ -25,7 +25,7 @@
     },
     {
       "id": "preflight",
-      "titleI18n": {
+      "title": {
         "en": "Preflight"
       },
       "environments": ["preview"],
