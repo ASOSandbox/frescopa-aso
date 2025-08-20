@@ -327,11 +327,6 @@ async function loadLazy(doc) {
     
   ]);
 
-  if (window.location.href.includes('.aem.page')) {
-   import('../tools/sidekick/aem-sites-optimizer-preflight.js');
-}
-
-
   if (sessionStorage.getItem('acdl:debug')) {
     import('./acdl/validate.js');
   }
