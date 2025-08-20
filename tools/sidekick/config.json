@@ -25,9 +25,7 @@
     },
     {
       "id": "preflight",
-      "title": {
-        "en": "Preflight"
-      },
+      "title": "Preflight",
       "environments": ["preview"],
       "event": "preflight"
     }
